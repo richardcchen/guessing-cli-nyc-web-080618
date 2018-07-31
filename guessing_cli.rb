@@ -5,10 +5,9 @@ def run_guessing_game
     puts "Guess a number between 1 and 6."
     dice = rand(1..6)
     userinput = gets.chomp
-  
     if userinput == "exit"
       puts "Goodbye!"
-    elsif userinput == dice
+    elsif userinput == dice.to_s
       puts "You guessed the correct number!"
     else
       puts "The computer guessed #{dice}."
